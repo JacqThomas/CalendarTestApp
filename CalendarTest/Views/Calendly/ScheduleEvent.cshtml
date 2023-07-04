@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Schedule Event";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Schedule Event</h2>
+
+<!-- Add the Calendly embed code here -->
+<div >
+    <div class ="vh-100" id="calendly-container">
+</div>
+</div>
+
+@section Scripts {
+    <script src="https://assets.calendly.com/assets/external/widget.js"></script>
+    <script>
+        (function () {
+            Calendly.initInlineWidget({
+                url: 'https://calendly.com/stackinglegos/demo-chat',
+                parentElement: document.getElementById('calendly-container'),
+                prefill: {},
+                utm: {}
+            });
+        })();
+    </script>
+}
