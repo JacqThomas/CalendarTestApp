@@ -5,22 +5,11 @@
 
 <h2>Schedule Event</h2>
 
-<!-- Add the Calendly embed code here -->
-<div >
-    <div class ="vh-100" id="calendly-container">
-</div>
-</div>
+<div class="vh-100" id="calendly-container"></div>
 
 @section Scripts {
-    <script src="https://assets.calendly.com/assets/external/widget.js"></script>
-    <script>
-        (function () {
-            Calendly.initInlineWidget({
-                url: 'https://calendly.com/stackinglegos/demo-chat',
-                parentElement: document.getElementById('calendly-container'),
-                prefill: {},
-                utm: {}
-            });
-        })();
-    </script>
+    <script src="~/js/calendly-widget.js" ></script>
+
 }
+
+
